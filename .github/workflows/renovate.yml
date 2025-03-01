@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Renovate
-        uses: renovatebot/github-action@v39.4.7
+        uses: renovatebot/github-action@main
         env:
           LOG_LEVEL: debug  # Enable detailed logs
         with:
