@@ -1,6 +1,10 @@
 {
   "extends": ["config:base"],
+  "enabledManagers": ["dockerfile"],
   "dockerfile": {
+    "enabled": true
+  },
+  "vulnerabilityAlerts": {
     "enabled": true
   }
 }
