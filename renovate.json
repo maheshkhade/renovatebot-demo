@@ -2,6 +2,13 @@
   "extends": ["config:base"],
   "enabledManagers": ["dockerfile"],
   "dockerfile": {
+    "enabled": true,
+    "fileMatch": ["^Dockerfile$"],
+    "groupName": "docker",
+    "pinDigests": true,
+    "separatePatchReleases": true
+  },
+  "vulnerabilityAlerts": {
     "enabled": true
   }
 }
