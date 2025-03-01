@@ -6,8 +6,6 @@
     "fileMatch": ["^Dockerfile$"],
     "groupName": "docker",
     "pinDigests": true,
-    "separatePatchReleases": true,
-    "separateMajorReleases": true,
     "ignoreDeps": ["node:18-alpine"]
   },
   "vulnerabilityAlerts": {
