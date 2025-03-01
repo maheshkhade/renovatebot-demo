@@ -1,4 +1,14 @@
-# Sample Dockerfile to test Renovate
-FROM node:18-alpine@sha256:e0340f26173b41066d68e3fe9bfbdb6571ab3cad0a4272919a52e36f4ae56925
-RUN apk add --no-cache curl
+# ❌ Using an outdated and vulnerable NGINX base image
+FROM nginx:1.19
 
+# Set working directory
+WORKDIR /usr/share/nginx/html
+
+# Copy static files (dummy example)
+COPY index.html .
+
+# Expose port 80
+EXPOSE 80
+
+# Start NGINX
+CMD ["nginx", "-g", "daemon off;"]

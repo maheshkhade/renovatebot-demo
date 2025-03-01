@@ -13,13 +13,6 @@
     "groupName": "docker",
     "pinDigests": true
   },
-  "packageRules": [
-    {
-      "matchManagers": ["dockerfile"],
-      "matchDepNames": ["node"],
-      "versioning": "regex:^18\\."
-    }
-  ],
   "vulnerabilityAlerts": {
     "enabled": true
   }
