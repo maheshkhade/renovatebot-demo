@@ -17,8 +17,8 @@ jobs:
           RENOVATE_REPOSITORIES: "maheshkhade/renovatebot-demo"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOG_LEVEL: debug  # Enable detailed logs
-          RENOVATE_AUTODISCOVER: "true"
-          RENOVATE_TOKEN: ${{ secrets.RENOVATE_PAT }}
+          #RENOVATE_AUTODISCOVER: "true"
+          #RENOVATE_TOKEN: ${{ secrets.RENOVATE_PAT }}
         with:
-          configurationFile: renovate.json
+          #configurationFile: renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
