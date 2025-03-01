@@ -1,15 +1,22 @@
 {
-  "extends": ["config:base"],
-  "enabledManagers": ["dockerfile"],
+  "extends": [
+    "config:recommended"
+  ],
+  "enabledManagers": [
+    "dockerfile"
+  ],
   "dockerfile": {
     "enabled": true,
-    "fileMatch": ["^Dockerfile$"],
+    "fileMatch": [
+      "^Dockerfile$"
+    ],
     "groupName": "docker",
     "pinDigests": true,
-    "ignoreDeps": ["node:18-alpine"]
+    "ignoreDeps": [
+      "node:18-alpine"
+    ]
   },
   "vulnerabilityAlerts": {
     "enabled": true
   }
 }
-
