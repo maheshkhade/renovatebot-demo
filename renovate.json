@@ -11,13 +11,15 @@
       "^Dockerfile$"
     ],
     "groupName": "docker",
-    "pinDigests": true,
-    "versioning": "regex:^18\\.",
-    "separateMajorReleases": true,
-    "ignoreDeps": [
-      "node:18-alpine"
-    ]
+    "pinDigests": true
   },
+  "packageRules": [
+    {
+      "matchManagers": ["dockerfile"],
+      "matchDepNames": ["node"],
+      "versioning": "regex:^18\\."
+    }
+  ],
   "vulnerabilityAlerts": {
     "enabled": true
   }
