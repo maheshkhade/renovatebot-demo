@@ -11,7 +11,7 @@
       "^Dockerfile$"
     ],
     "groupName": "docker",
-    "pinDigests": true
+    "pinDigests": false
   },
   "vulnerabilityAlerts": {
     "enabled": true
