@@ -1,0 +1,8 @@
+{
+  "extends": ["config:base"],
+  "repositories": ["maheshkhade/renovatebot-demo"],
+  "dockerfile": {
+    "enabled": true
+  }
+}
+
