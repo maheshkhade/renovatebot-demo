@@ -1,19 +1,5 @@
 {
   "extends": [
-    "config:recommended"
-  ],
-  "enabledManagers": [
-    "dockerfile"
-  ],
-  "dockerfile": {
-    "enabled": true,
-    "fileMatch": [
-      "^Dockerfile$"
-    ],
-    "groupName": "docker",
-    "pinDigests": false
-  },
-  "vulnerabilityAlerts": {
-    "enabled": true
-  }
+    "github>maheshkhade/workflows:ccp"
+  ]
 }
