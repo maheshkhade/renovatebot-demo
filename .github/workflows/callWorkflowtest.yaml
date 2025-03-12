@@ -1,0 +1,27 @@
+name: workflowcallTest
+on:
+  workflow_dispatch:
+    inputs:
+      LOG_LEVEL:
+        type: choice
+        description: "Renovate log level (DEBUG, INFO, WARN, ERROR, FATAL)"
+        options:
+        - "DEBUG"
+        - "INFO"
+        - "WARN"
+        - "ERROR"
+        - "FATAL"
+        default: "INFO"
+        required: false
+
+permissions:
+  contents: read
+  id-token: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  renovate:
+    uses: maheshkhade/workflows/.github/workflows/renovate.yaml
+    with:
+      renovate_log_level: ${{ github.event.inputs.log_level }}
