@@ -2,7 +2,7 @@ name: workflowcallTest
 on:
   workflow_dispatch:
     inputs:
-      LOG_LEVEL:
+      log_level:
         type: choice
         description: "Renovate log level (DEBUG, INFO, WARN, ERROR, FATAL)"
         options:
