@@ -22,6 +22,6 @@ permissions:
 
 jobs:
   renovate:
-    uses: maheshkhade/workflows/.github/workflows/renovate.yaml
+    uses: maheshkhade/workflows/.github/workflows/renovate.yaml@main
     with:
       renovate_log_level: ${{ github.event.inputs.log_level }}
