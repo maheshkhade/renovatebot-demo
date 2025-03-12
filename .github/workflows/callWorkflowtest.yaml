@@ -13,6 +13,10 @@ on:
         - "FATAL"
         default: "INFO"
         required: false
+    secrets:
+      token:
+        description: "RENOVATEBOT Token"
+        required: true
 
 permissions:
   contents: read
@@ -25,3 +29,5 @@ jobs:
     uses: maheshkhade/workflows/.github/workflows/renovate.yaml@main
     with:
       renovate_log_level: ${{ github.event.inputs.log_level }}
+    secrets:
+      token: ${{ secrets.RENOVATE_TOKEN }}  #  Passing the token
