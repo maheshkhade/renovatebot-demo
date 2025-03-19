@@ -1,5 +1,6 @@
 {
   "extends": [
+    "github>maheshkhade/renovatebot-demo/go.json",
     "github>maheshkhade/workflows:ccp"
   ]
 }
