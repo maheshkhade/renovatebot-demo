@@ -1,5 +1,5 @@
 # ❌ Using an outdated and vulnerable NGINX base image
-FROM nginx:1.19
+FROM nginx:1.27
 
 # Set working directory
 WORKDIR /usr/share/nginx/html
