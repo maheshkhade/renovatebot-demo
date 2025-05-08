@@ -1,6 +1,5 @@
 {
   "extends": [
-    "./go.json",
     "github>maheshkhade/workflows:ccp"
   ]
 }
